@@ -2,6 +2,7 @@
 
 # Positional Parameters
 Parameters passed in a fixed order to a function
+
                                      function sum(a: number, b: number) { ... }                 
 
 # Default Parameters	
