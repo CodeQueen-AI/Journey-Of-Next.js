@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Methods Of Params 
 
-## Getting Started
+# Positional Parameters
+Parameters passed in a fixed order to a function
+                           function sum(a: number, b: number) { ... }                 
 
-First, run the development server:
+# Default Parameters	
+Parameters that use a default value if no value is passed during the function call
+                            function greet(name = "Guest") { ... }
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Rest Parameters	
+Parameters that allow multiple arguments to be passed as an array
+                          function sum(...numbers: number[]) { ... }
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Destructuring Parameters	
+Extracting values from an object or array and using them as function parameters
+                              function display({name, age}) { ... }
+                        
+# Optional Parameters	
+Parameters that are not mandatory for the function call
+                                function greet(name?: string) { ... }
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# Static Parameters	
+Parameters that have fixed, predefined values and do not change at runtime
+                          function add(a: number, b: number) { ... }
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Dynamic Parameters	
+Flexible parameters that can change or vary at runtime, such as rest parameters
+                                  function greet(name: string, ...others) { ... }
