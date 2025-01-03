@@ -33,4 +33,5 @@ Parameters that have fixed, predefined values and do not change at runtime
 
 # Dynamic Parameters	
 Flexible parameters that can change or vary at runtime, such as rest parameters
-                                          function greet(name: string, ...others) { ... }
+
+                                  function greet(name: string, ...others) { ... }
